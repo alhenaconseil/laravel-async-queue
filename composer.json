@@ -1,9 +1,13 @@
 {
-    "name": "barryvdh/laravel-async-queue",
-    "description": "Async Queue Driver for Laravel (Push to background)",
-    "keywords": ["laravel", "queue", "async", "background"],
+    "name": "alhena/laravel-async-queue",
+    "description": "Async Queue Driver for Laravel (Push to background), updated to work with mongodb",
+    "keywords": ["laravel", "queue", "async", "background", "mongodb"],
     "license": "MIT",
     "authors": [
+        {
+            "name": "Benoît Wery",
+            "email": "benoit@alhena-conseil.com"
+        },
         {
             "name": "Barry vd. Heuvel",
             "email": "barryvdh@gmail.com"
@@ -25,7 +29,7 @@
     },
     "extra": {
         "branch-alias": {
-            "dev-master": "0.3-dev"
+            "dev-master": "mongo-dev"
         }
     }
 }
