@@ -86,7 +86,7 @@ class AsyncQueue extends SyncQueue
      */
     protected function getCommand($jobId, $delay = 0)
     {
-        $cmd = '%s artisan queue:async %d --env=%s --delay=%d';
+        $cmd = '%s artisan queue:async %s --env=%s --delay=%d';
         $cmd = $this->getBackgroundCommand($cmd);
 
         $binary = $this->getPhpBinary();
