@@ -2,12 +2,12 @@
 
 namespace Barryvdh\Queue\Models;
 
-use Illuminate\Database\Eloquent\Model;
+use Jenssegers\Mongodb\Model;
 
 /**
  * Queue jobs.
  *
- * @property int $id
+ * @property string $id
  * @property int $status
  * @property int $retries
  * @property int $delay
@@ -22,6 +22,6 @@ class Job extends Model
     const STATUS_STARTED = 2;
     const STATUS_FINISHED = 3;
 
-    protected $table = 'laq_async_queue';
+    protected $collection = 'laq_async_queue';
     protected $guarded = array('id', 'created_at', 'updated_at');
 }
